@@ -12,5 +12,5 @@ collections:
       fields: # The fields for each document, usually in front matter
         - { label: "Title", name: "title", widget: "string" }
         - { label: "Tags", name: "tags", widget: "list", default: "posts" }
-        - { label: "CSS", name: "cssCode", widget: "markdown" }
-        - { label: "HTML", name: "htmlCode", widget: "markdown" }
+        - { label: "CSS", name: "cssCode", widget: "code" }
+        - { label: "HTML", name: "htmlCode", widget: "code" }
