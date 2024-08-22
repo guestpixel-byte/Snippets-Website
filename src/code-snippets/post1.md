@@ -1,20 +1,89 @@
 ---
-title: Hero Layout 1
-tags: ["posts", "hero"]
+title: Navbar Layout 1
+tags: ["posts", "navbar"]
+URL: \code-preview\navbar.html
 cssCode: | 
-    .box {
-        width: 100px;
-        height: 100px;
-        background-color: lightblue;
-        border: 2px solid blue;
-        text-align: center;
-        line-height: 100px;
+    /*
+    Navbar
+    */ 
+    .navbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
+        color: #fff;
+        border-bottom: #fff solid 1px;
+    }
+
+    .navbar .logo {
+        font-size: 24px;
+        font-weight: bold;
+        color: var(--purple);
+    }
+
+    .nav-links {
+        display: flex;
+        list-style: none;
+    }
+
+    .nav-links li {
+        margin-left: 20px;
+    }
+
+    .nav-links a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+
+    .hamburger {
+        display: none;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    #menu-toggle {
+        display: none;
+    }
+
+    @media (max-width: 768px) {
+        .nav-links {
+            display: none;
+            flex-direction: column;
+            width: 100%;
+            background-color: #333;
+            position: absolute;
+            top: 60px;
+            left: 0;
+        }
+
+        .nav-links li {
+            margin: 10px 0;
+            text-align: center;
+        }
+
+        .nav-links a {
+            font-size: 20px;
+        }
+
+        #menu-toggle:checked + .hamburger + .nav-links {
+            display: flex;
+        }
+
+        .hamburger {
+            display: block;
+        }
     }
 htmlCode: | 
-    <div class="hero-wrap">
-        <div class="hero-content">
-            <img src="\assets\snippets-logo.png" alt="Hero logo">
-        </div>
-    </div>
-           
+    <nav class="navbar">
+        <div class="logo">Paper Boy</div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="hamburger">&#9776;</label>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
 ---

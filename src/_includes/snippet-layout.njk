@@ -14,10 +14,14 @@ layout: 'base.njk'
         <button onclick="copyToClipboard('css-code')">Copy CSS</button>
     </div>
 </div>
+
 <h2 class="h2-center">Live Preview</h2>
+
+<!-- Resizable iframe container -->
 <div id="preview-container">
-    <div class="thumbnail-preview">
-        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+    <div class="thumbnail-preview resizable-iframe-wrapper">
+        <iframe src="{{ URL }}" class="iframe-thumbnail resizable-iframe"></iframe>
     </div>
 </div>
+
 <script src="\js\copy.js"></script>

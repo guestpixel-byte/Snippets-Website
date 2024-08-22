@@ -34,22 +34,84 @@
 <div class="code-wrap">
     <div class="code-container">
         <h2>HTML Code</h2>
-        <pre><code class="language-css" id="html-code"></code></pre>
+        <pre><code class="language-css" id="html-code">&lt;section class=&quot;hero&quot;&gt;
+    &lt;div class=&quot;hero-content&quot;&gt;
+        &lt;h1&gt;Your Hero Heading&lt;/h1&gt;
+        &lt;p&gt;Your subtext that gives more information about your heading and call to action.&lt;/p&gt;
+        &lt;a href=&quot;#cta&quot; class=&quot;cta-btn&quot;&gt;Call to Action&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/section&gt;
+</code></pre>
         <button onclick="copyToClipboard('html-code')">Copy HTML</button>
     </div>
     <div class="code-container">
         <h2>CSS Code</h2>
-        <pre><code class="language-css" id="css-code">  </code></pre>
+        <pre><code class="language-css" id="css-code"> * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: &#39;Arial&#39;, sans-serif;
+}
+
+.hero {
+    background: url(&#39;your-background-image.jpg&#39;) no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content {
+    max-width: 600px;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.cta-btn {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: #007bff;
+    color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+ </code></pre>
         <button onclick="copyToClipboard('css-code')">Copy CSS</button>
     </div>
 </div>
+
 <h2 class="h2-center">Live Preview</h2>
+
+<!-- Resizable iframe container -->
 <div id="preview-container">
-    <div class="thumbnail-preview">
-        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+    <div class="thumbnail-preview resizable-iframe-wrapper">
+        <iframe src="&#92;code-preview&#92;hero.html" class="iframe-thumbnail resizable-iframe"></iframe>
     </div>
 </div>
+
 <script src="\js\copy.js"></script>
+
             </div>
         </div>
     </div>

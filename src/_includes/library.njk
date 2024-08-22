@@ -20,7 +20,7 @@
             {% for post in collections.posts %}
                 <article class="post-item" data-category="{{ post.data.tags[1] }}">
                     <div class="thumbnail-preview">
-                        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+                        <iframe src="{{ post.data.URL }}" class="iframe-thumbnail"></iframe>
                     </div>
                     <h2>{{ post.data.title }}</h2>
                     <p>{{ post.data.description }}</p>
