@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snippets</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+
+    <section class="hero-section">
+    <div class="hero-wrap">
+        <div class="hero-content">
+            <img src="\assets\snippets-logo.png" alt="Hero logo">
+        </div>
+    </div>
+</section>
+
+    
+        <h1>Filters</h1>
+
+    <!-- Filter Buttons -->
+    <ul class="collection-filter" id="filter-buttons">
+        <li><button class="filter-btn" data-category="all">All</button></li>
+        <li><button class="filter-btn" data-category="hero">Hero Layout</button></li>
+        <li><button class="filter-btn" data-category="navbar">Navbar</button></li>
+        <!-- Add more buttons for other categories -->
+    </ul>
+
+    <!-- List of Posts -->
+    <div class="grid" id="post-list">
+        
+        <article class="post-item" data-category="hero">
+            <h2>Hero Layout 1</h2>
+            <p></p>
+            <a href="/code-snippets/post1/"><button class="view-btn">Preview</button></a>
+        </article>
+        
+        <article class="post-item" data-category="hero">
+            <h2>Hero Layout 2</h2>
+            <p></p>
+            <a href="/code-snippets/post2/"><button class="view-btn">Preview</button></a>
+        </article>
+        
+        <article class="post-item" data-category="navbar">
+            <h2>Navbar 1</h2>
+            <p></p>
+            <a href="/code-snippets/post3/"><button class="view-btn">Preview</button></a>
+        </article>
+        
+        <article class="post-item" data-category="navbar">
+            <h2>Navbar 2</h2>
+            <p></p>
+            <a href="/code-snippets/post4/"><button class="view-btn">Preview</button></a>
+        </article>
+        
+    </div>
+
+    <script src="\js\filter.js"></script>
+
+    
+</body>
+</html>

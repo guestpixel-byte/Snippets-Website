@@ -1,0 +1,22 @@
+    <h1>Filters</h1>
+
+    <!-- Filter Buttons -->
+    <ul class="collection-filter" id="filter-buttons">
+        <li><button class="filter-btn" data-category="all">All</button></li>
+        <li><button class="filter-btn" data-category="hero">Hero Layout</button></li>
+        <li><button class="filter-btn" data-category="navbar">Navbar</button></li>
+        <!-- Add more buttons for other categories -->
+    </ul>
+
+    <!-- List of Posts -->
+    <div class="grid" id="post-list">
+        {% for post in collections.posts %}
+        <article class="post-item" data-category="{{ post.data.tags[1] }}">
+            <h2>{{ post.data.title }}</h2>
+            <p>{{ post.data.description }}</p>
+            <a href="{{ post.url }}"><button class="view-btn">Preview</button></a>
+        </article>
+        {% endfor %}
+    </div>
+
+    <script src="\js\filter.js"></script>
