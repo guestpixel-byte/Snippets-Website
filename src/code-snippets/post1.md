@@ -11,5 +11,10 @@ cssCode: |
         line-height: 100px;
     }
 htmlCode: | 
-    <div class="box">Sample Box</div>        
+    <div class="hero-wrap">
+        <div class="hero-content">
+            <img src="\assets\snippets-logo.png" alt="Hero logo">
+        </div>
+    </div>
+           
 ---

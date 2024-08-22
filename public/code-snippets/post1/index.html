@@ -31,16 +31,21 @@
         <div class="page-container">
             <div class="page-content">
                 
-
-<div class="code-container">
-    <h2>HTML Code</h2>
-    <pre><code class="language-css" id="html-code">&lt;div class=&quot;box&quot;&gt;Sample Box&lt;/div&gt;        
+<div class="code-wrap">
+    <div class="code-container">
+        <h2>HTML Code</h2>
+        <pre><code class="language-css" id="html-code">&lt;div class=&quot;hero-wrap&quot;&gt;
+    &lt;div class=&quot;hero-content&quot;&gt;
+        &lt;img src=&quot;&#92;assets&#92;snippets-logo.png&quot; alt=&quot;Hero logo&quot;&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+       
 </code></pre>
-    <button onclick="copyToClipboard('html-code')">Copy HTML</button>
-</div>
-<div class="code-container">
-    <h2>CSS Code</h2>
-    <pre><code class="language-css" id="css-code"> .box {
+        <button onclick="copyToClipboard('html-code')">Copy HTML</button>
+    </div>
+    <div class="code-container">
+        <h2>CSS Code</h2>
+        <pre><code class="language-css" id="css-code"> .box {
     width: 100px;
     height: 100px;
     background-color: lightblue;
@@ -49,15 +54,16 @@
     line-height: 100px;
 }
  </code></pre>
-    <button onclick="copyToClipboard('css-code')">Copy CSS</button>
+        <button onclick="copyToClipboard('css-code')">Copy CSS</button>
+    </div>
 </div>
-<h2>Live Preview</h2>
+<h2 class="h2-center">Live Preview</h2>
 <div id="preview-container">
-    <div class="box">Sample Box</div>
+    <div class="thumbnail-preview">
+        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+    </div>
 </div>
 <script src="\js\copy.js"></script>
-
- 
             </div>
         </div>
     </div>

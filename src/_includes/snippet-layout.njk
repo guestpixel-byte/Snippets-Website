@@ -2,21 +2,22 @@
 layout: 'base.njk'
 ---
 
-
-<div class="code-container">
-    <h2>HTML Code</h2>
-    <pre><code class="language-css" id="html-code">{{ htmlCode | escape | safe }}</code></pre>
-    <button onclick="copyToClipboard('html-code')">Copy HTML</button>
+<div class="code-wrap">
+    <div class="code-container">
+        <h2>HTML Code</h2>
+        <pre><code class="language-css" id="html-code">{{ htmlCode | escape | safe }}</code></pre>
+        <button onclick="copyToClipboard('html-code')">Copy HTML</button>
+    </div>
+    <div class="code-container">
+        <h2>CSS Code</h2>
+        <pre><code class="language-css" id="css-code"> {{ cssCode | escape | safe }} </code></pre>
+        <button onclick="copyToClipboard('css-code')">Copy CSS</button>
+    </div>
 </div>
-<div class="code-container">
-    <h2>CSS Code</h2>
-    <pre><code class="language-css" id="css-code"> {{ cssCode | escape | safe }} </code></pre>
-    <button onclick="copyToClipboard('css-code')">Copy CSS</button>
-</div>
-<h2>Live Preview</h2>
+<h2 class="h2-center">Live Preview</h2>
 <div id="preview-container">
-    <div class="box">Sample Box</div>
+    <div class="thumbnail-preview">
+        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+    </div>
 </div>
 <script src="\js\copy.js"></script>
-
- 

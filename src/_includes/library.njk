@@ -1,6 +1,6 @@
-<h1>Filters</h1>
-<div class="filter-wrap">
 
+<div
+    class="filter-wrap">
     <!-- Filter Buttons -->
     <ul class="collection-filter" id="filter-buttons">
         <li>
@@ -14,12 +14,14 @@
         </li>
         <!-- Add more buttons for other categories -->
     </ul>
-
     <!-- List of Posts -->
     <div class="grid-wrap">
         <div class="grid" id="post-list">
             {% for post in collections.posts %}
                 <article class="post-item" data-category="{{ post.data.tags[1] }}">
+                    <div class="thumbnail-preview">
+                        <iframe src="\code-preview\hero.html" class="iframe-thumbnail"></iframe>
+                    </div>
                     <h2>{{ post.data.title }}</h2>
                     <p>{{ post.data.description }}</p>
                     <a href="{{ post.url }}">
